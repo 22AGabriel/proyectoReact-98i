@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import Card from '../Card/Card';
 
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
@@ -20,16 +21,23 @@ const TodoList = () => {
       {/* Creacion de tarea */}
       <fieldset>
         <label>Nueva tarea:</label>
-        <input type='text' ref={$input} />
-        <button onClick={handleNewTodo}>Cargar</button>
+        <input className='form-control' type='text' ref={$input} />
+        <button className='btn btn-primary' onClick={handleNewTodo}>
+          Cargar
+        </button>
       </fieldset>
 
       {/* Listado de tareas */}
-      <ul>
+      <div>
         {todos.map((todo, index) => (
-          <li key={index}>{todo}</li>
+          <Card
+            key={index}
+            imgUrl='...'
+            titulo={todo}
+            descripcion={`Este es el todo numero #${index}`}
+          />
         ))}
-      </ul>
+      </div>
     </section>
   );
 };
