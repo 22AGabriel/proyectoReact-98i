@@ -64,71 +64,71 @@ const ContactsFormV1 = (props) => {
   return (
     <form className='bg-white p-3 rounded text-dark' onSubmit={handleSubmit}>
       <fieldset className='mb-2'>
-        <label htmlFor='input-nombre' className='form-label'>
+        <label className='form-label' htmlFor='input-nombre' >
           Nombre
         </label>
         <input
           required
-          placeholder='Juan Perez'
-          type='text'
-          id='input-nombre'
           className='form-control'
-          ref={$inputNombre}
+          id='input-nombre'
           maxLength={40}
           minLength={3}
+          placeholder='Juan Perez'
+          ref={$inputNombre}
+          type='text'
         />
         <div className='invalid-feedback'>
           <span className='badge text-bg-danger'>Ingrese un nombre valido</span>
         </div>
       </fieldset>
       <fieldset className='mb-2'>
-        <label htmlFor='input-numero' className='form-label'>
+        <label className='form-label' htmlFor='input-numero'>
           Numero
         </label>
         <input
           required
-          placeholder='381 123 4567'
-          type='text'
-          id='input-numero'
           className='form-control'
-          ref={$inputNumero}
-          minLength={8}
+          id='input-numero'
           maxLength={10}
+          minLength={8}
+          placeholder='381 123 4567'
+          ref={$inputNumero}
+          type='text'
         />
         <div className='invalid-feedback'>
           <span className='badge text-bg-danger'>Ingrese un número valido</span>
         </div>
       </fieldset>
       <fieldset className='mb-2'>
-        <label htmlFor='input-email' className='form-label'>
+        <label className='form-label' htmlFor='input-email'>
           Email
         </label>
         <input
           required
-          placeholder='jperez@gmail.com'
-          type='email'
-          id='input-email'
           className='form-control'
-          ref={$inputEmail}
-          minLength={3}
+          id='input-email'
           maxLength={50}
+          minLength={3}
+          placeholder='jperez@gmail.com'
+          ref={$inputEmail}
+          type='email'
         />
         <div className='invalid-feedback'>
           <span className='badge text-bg-danger'>Ingrese un email valido</span>
         </div>
       </fieldset>
       <fieldset className='mb-2'>
-        <label htmlFor='input-imagen' className='form-label'>
+        <label className='form-label' htmlFor='input-imagen'>
           Imagen
         </label>
         <input
           required
-          placeholder='https://google.com'
-          type='imagen'
-          id='input-imagen'
           className='form-control'
-          ref={$inputImagen}
+          id='input-imagen'
           minLength={3}
+          placeholder='https://google.com'
+          ref={$inputImagen}
+          type='imagen'
         />
         <div className='invalid-feedback'>
           <span className='badge text-bg-danger'>Ingrese un imagen valido</span>

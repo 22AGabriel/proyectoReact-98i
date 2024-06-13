@@ -17,6 +17,13 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'react/jsx-sort-props': [
+      1,
+      {
+        shorthandFirst: true,
+        callbacksLast: true,
+      },
+    ],
     // 'react/prop-types': 'off',
   },
 };
