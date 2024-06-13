@@ -128,10 +128,10 @@ const ContactsFormV1 = (props) => {
           minLength={3}
           placeholder='https://google.com'
           ref={$inputImagen}
-          type='imagen'
+          type='url'
         />
         <div className='invalid-feedback'>
-          <span className='badge text-bg-danger'>Ingrese un imagen valido</span>
+          <span className='badge text-bg-danger'>Ingrese una imagen valida</span>
         </div>
       </fieldset>
       <div className='text-end mt-3'>
