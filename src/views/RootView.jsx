@@ -1,10 +1,12 @@
 import { Outlet } from 'react-router-dom';
 
+import Header from '../components/Common/Header/Header';
+
 const RootView = () => {
   return (
     <>
-      <header>Este es el header</header>
-      <main className='container'>
+      <Header />
+      <main className='container my-3'>
         <Outlet />
       </main>
       <footer>Este es el footer</footer>

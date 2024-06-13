@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
+import Swal from 'sweetalert2';
+
 import ContactsRow from './ContactsRow';
 
 import './ContactsTable.css';
-import Swal from 'sweetalert2';
 
 const ContactsTable = (props) => {
   const { contactos, setContactos } = props;
