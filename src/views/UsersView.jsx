@@ -4,7 +4,6 @@ import UsersList from '../components/Users/UsersList';
 import LoadingUsers from '../components/Users/LoadingUsers';
 
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
-console.log(BACKEND_URL);
 
 const UsersView = () => {
   const [users, setUsers] = useState([]);
@@ -13,7 +12,6 @@ const UsersView = () => {
     try {
       const res = await fetch(
         `${BACKEND_URL}/users`
-        // `http://localhost:3000/users`
       );
       const data = await res.json();
 
