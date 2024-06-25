@@ -8,3 +8,13 @@ export const getUsers = async () => {
 
   return data;
 };
+
+export const deleteUserFn = async (userId) => {
+  const res = await fetch(`${BACKEND_URL}/users/${userId}`, {
+    method: 'DELETE',
+  });
+
+  if (!res.ok) throw new Error();
+
+  return null;
+};

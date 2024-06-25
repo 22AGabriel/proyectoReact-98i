@@ -10,6 +10,7 @@ import { router } from './constants/routes.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './main.css';
+import { Toaster } from 'sonner';
 
 const queryClient = new QueryClient();
 
@@ -18,5 +19,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <QueryClientProvider client={queryClient}>
       <RouterProvider router={router} />
     </QueryClientProvider>
+    <Toaster richColors position='top-center' />
   </React.StrictMode>
 );
