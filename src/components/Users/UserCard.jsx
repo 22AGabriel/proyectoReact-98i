@@ -4,9 +4,11 @@ const UserCard = (props) => {
   const { user } = props;
 
   return (
-    <article className='card col-12 col-md-4 p-2'>
-      <h2 className='fw-bold'>{user.name}</h2>
-      <p className='text-sm'>{user.email}</p>
+    <article className='col-12 col-md-4'>
+      <div className='card p-2 h-100'>
+        <h2 className='fw-bold'>{user.name}</h2>
+        <p className='text-sm'>{user.email}</p>
+      </div>
     </article>
   );
 };
